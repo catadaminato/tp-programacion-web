@@ -232,28 +232,67 @@ body {
 }
 
 /* DEJAR ESAPCIO PARA LA PARTE DE PerRSONALIZAR*/
-/* Radios con colores personalizados */
 
-input.radio-rosa {
-  accent-color: #fdd0dd;
-}
-input.radio-menta {
-  color: #c4fdb1;
-}
-input.radio-lavanda {
-  color: #cfcffd;
-}
-input.radio-marron {
-  color: #d9b99b;
-}
-input.radio-gris {
-  color: #696868;
+.capibara-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
+#capibara-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#capibara-anteojos {
+  top: 22%;         
+  left: 50%;        
+  width: 38%;       
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%); /* centra mejor */
+}
 
 
+#capibara-celular {
+  fill:#421c7d; /* fill por normas de bootstap*/
+  top: 60%;         
+  left: 35%;        
+  width: 15%;       
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%); /* centra mejor */
+}
 
+#capibara-flor {
+  fill:#dd498c; /* fill por normas de bootstap*/
+  top: 12%;         
+  left: 65%;        
+  width: 15%;       
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%); /* centra mejor */
+}
 
+#capibara-taza {
+  fill:#fff3eb; /* fill por normas de bootstap*/
+  top: 64%;         
+  left: 50%;        
+  width: 15%;       
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%); /* centra mejor */
+}
 
 /* seccion de newsletter*/
 .newsletter-section {
