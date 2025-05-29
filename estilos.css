@@ -26,41 +26,6 @@ body {
   color: var(--letras-rosa);
 }
 
-    header {
-        background-color: var(--lavanda);
-        padding: 20px;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 15px;
-        color: #ff519d;
-        text-decoration: none;
-    }
-
-    section {
-        margin: 0;      /* O reducir si tenés margin: 20px auto */
-        padding: 40px;
-        background: none;   /* Evita un fondo blanco por sección */
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-
-    button {
-        padding: 12px 20px;
-        background-color: var(--rosa);
-        border: none;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-        button:hover {
-        background-color: var(--lavanda);
-    }
-
 /* === HERO SECTION – SECCIÓN PRINCIPAL DE BIENVENIDA === */
 
     /* Sección Hero */
@@ -152,41 +117,54 @@ body {
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
+/*-------------------HEATHER*/
 
- /* HEADER FIJO Y ESTÉTICO */
+/* HEADER RESPONSIVE COMO EL LINK, PERO TU ESTILO */
 .navbar {
-    position: fixed;              /* Fijo arriba */
-    top: 0;
-    left: 0; /* ✅ Asegura que se alinee desde la izquierda */
-    width: 100%; 
-    background-color: white;     /* Fondo blanco */
-    padding: 15px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;       
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    color: var(--letras-rosa);
-    margin: 0;
-  }
-  
-  .navbar nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--letras-rosa);
-    font-weight: bold;
-    padding: 8px 14px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar nav a:hover {
-    background-color: var(--lavanda);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--letras-rosa);
+  margin: 0;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: nowrap;      
+  gap: 15px;               
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.navbar nav a {
+  font-size: 1rem;      
+  padding: 4px 8px;        
+  text-decoration: none;
+  color: var(--letras-rosa);
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;     
+}
+
+.navbar nav a:hover {
+  background-color: var(--lavanda);
+}
+
 
 /*seccion favoritos*/
 
@@ -195,10 +173,17 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin: 0;              /* ❌ Quitamos el margen que genera separación y centrado */
-  width: 100%;            /* ✅ Hace que la card ocupe toda la columna asignada */
+  margin: 0;              
+  width: 100%;            
   transition: transform 0.3s ease;
 }
+.card img {
+  width: 100%;
+  height: auto !important; 
+  object-fit: cover;
+  border-radius: 0;
+}
+
 /*para q se aloden */
 .card-grid {
   display: grid;
@@ -207,8 +192,6 @@ body {
   padding: 20px;
 }
 
-
-/* Animación sutil al pasar el mouse */
 .card:hover {
   transform: scale(1.02);
 }
@@ -231,7 +214,7 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-/* DEJAR ESAPCIO PARA LA PARTE DE PerRSONALIZAR*/
+/*-----------------------------PERSONALIZAR*/
 
 .capibara-container {
   position: relative;
@@ -294,9 +277,9 @@ body {
   transform: translate(-50%, -50%); /* centra mejor */
 }
 
-/* seccion de newsletter*/
+/* ----------------------------------------------seccion de newsletter*/
 .newsletter-section {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 60px 0;
   background-color: transparent;
@@ -350,12 +333,47 @@ body {
   transform: scale(1.05);
 }
 
+/*----------------comentarios*/
+
+.btn-agregar{
+  background-color: var(--letras-rosa);
+  color: white;
+  border: none;
+}
+
+.btn-agregar:hover{
+  background-color: var(--letras-rosa);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Estilo para el contenedor de cada comentario */
+.comentario {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Botón Editar rosa */
+.btn-editar {
+  background-color: #e78eb9;
+  color: white;
+  border: none;
+}
+
+.btn-editar:hover {
+  background-color: #d38baa;
+  color: white;
+}
 
 
 
 
 
 /* -------------------------------------------------FOOTER*/
+
 .footer {
     background-color: var(--rosa-fuerte);
     color: var(--letras-rosa);
@@ -363,20 +381,18 @@ body {
     width: 100%;
     left: 0;
   }
-  
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
     gap: 40px;
     width: 100%;
-    margin: 0;
-
+    margin: 0 auto;
+    max-width: 1200px;
   }
   
-  .footer-col {
-    flex: 1 1 220px;
-    min-width: 200px;
+  .footer-col:first-child {
+    margin-right: auto; /* 👈 empuja las otras columnas hacia la derecha */
   }
   
   .footer-col h3,
@@ -452,5 +468,16 @@ body {
   background-color: var(--letras-rosa);
   color: white;
   transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;    
+}
+
+.card-body a.btn-adoptar {
+  margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
