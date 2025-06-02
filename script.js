@@ -56,7 +56,7 @@
     });
   });
 
-//-------------------------------SECCION COMENTARIOS---------------------
+//-------------------------------SECCION COMENTARIOS--------------------------------------
 
 let comentarios = [];
 
@@ -110,7 +110,7 @@ function eliminarComentario(index) {
 
 function editarComentario(index) {
   const nuevoMensaje = prompt("Editá el mensaje:", comentarios[index].mensaje);
-  if (nuevoMensaje !== null && nuevoMensaje.trim() !== "") {
+  if (nuevoMensaje !== null && nuevoMensaje.trim() !== "") { 
     comentarios[index].mensaje = nuevoMensaje.trim();
     mostrarComentarios();
   }

@@ -42,11 +42,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background: none;          /* Sin fondo */
-    box-shadow: none;          /* Sin sombra */
-    backdrop-filter: none;     /* Sin desenfoque */
-    border-radius: 0;          /* Sin bordes redondeados */
-    border: none;              /* Sin bordes */
     }
   
   
@@ -70,8 +65,8 @@ body {
   .botones {
     display: flex;
     gap: 15px;
-    justify-content: center;  /* 👈 centra horizontalmente */
-    flex-wrap: wrap;          /* 👈 evita que se rompa en pantallas chicas */
+    justify-content: center;  /*  centra horizontalmente */
+    flex-wrap: wrap;          /* evita que se rompa en pantallas chicas */
   }
   
   .boton-hero {
@@ -119,7 +114,6 @@ body {
 
 /*-------------------HEATHER*/
 
-/* HEADER RESPONSIVE COMO EL LINK, PERO TU ESTILO */
 .navbar {
   position: fixed;
   top: 0;
@@ -166,7 +160,7 @@ body {
 }
 
 
-/*seccion favoritos*/
+/*------------------------------------seccion favoritos*/
 
 .card {
   border-radius: 20px;
@@ -184,7 +178,7 @@ body {
   border-radius: 0;
 }
 
-/*para q se aloden */
+/*para q se amolden */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -250,11 +244,11 @@ body {
   pointer-events: none;
   z-index: 10;
   display: none;
-  transform: translate(-50%, -50%); /* centra mejor */
+  transform: translate(-50%, -50%); 
 }
 
 #capibara-flor {
-  fill:#dd498c; /* fill por normas de bootstap*/
+  fill:#dd498c; 
   top: 12%;         
   left: 65%;        
   width: 15%;       
@@ -262,11 +256,11 @@ body {
   pointer-events: none;
   z-index: 10;
   display: none;
-  transform: translate(-50%, -50%); /* centra mejor */
+  transform: translate(-50%, -50%); 
 }
 
 #capibara-taza {
-  fill:#fff3eb; /* fill por normas de bootstap*/
+  fill:#fff3eb; 
   top: 64%;         
   left: 50%;        
   width: 15%;       
@@ -274,7 +268,7 @@ body {
   pointer-events: none;
   z-index: 10;
   display: none;
-  transform: translate(-50%, -50%); /* centra mejor */
+  transform: translate(-50%, -50%); 
 }
 
 /* ----------------------------------------------seccion de newsletter*/
@@ -392,7 +386,7 @@ body {
   }
   
   .footer-col:first-child {
-    margin-right: auto; /* 👈 empuja las otras columnas hacia la derecha */
+    margin-right: auto; /* empuja las otras columnas hacia la derecha */
   }
   
   .footer-col h3,
